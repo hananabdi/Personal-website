@@ -4,7 +4,62 @@
   <meta charset="UTF-8">
   <title>Home</title>
 
-  <link rel="stylesheet" href="css/style.css">
+  
+  <style>
+    body {
+      background-color: #ffe6f0;
+      font-family: Arial;
+      color: black;
+      text-align: center;
+    }
+
+    h1, h2 {
+      font-weight: bold;
+    }
+
+    nav {
+      margin: 20px;
+    }
+
+    nav a {
+      margin: 10px;
+      text-decoration: none;
+      font-weight: bold;
+      color: black;
+      background-color: white;
+      padding: 10px 15px;
+      border-radius: 20px;
+    }
+
+    nav a:hover {
+      background-color: #ff8fbd;
+    }
+
+    img {
+      width: 220px;
+      border-radius: 50%;
+      margin: 20px auto;
+      display: block;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      background-color: #ff8fbd;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ff5fa2;
+    }
+
+    #message {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 
 <body>
@@ -22,12 +77,18 @@
 <h2>Welcome</h2>
 <p>Hi, my name is Hanan. I am a sophomore majoring in IT.</p>
 
-<img src="https://cdn-icons-png.flaticon.com/512/2922/2922561.png" width="200">
+
+<img src="https://cdn-icons-png.flaticon.com/512/2922/2922561.png" alt="avatar">
 
 <button onclick="showMessage()">Click Me</button>
 <p id="message"></p>
 
-<script src="js/script.js"></script>
+<script>
+  function showMessage() {
+    document.getElementById("message").innerHTML =
+      "Welcome! Thanks for visiting my website.";
+  }
+</script>
 
 </body>
 </html>
